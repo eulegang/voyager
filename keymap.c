@@ -65,8 +65,8 @@
 #define MO_R LT(3, KC_R)
 #define MO_U LT(3, KC_U)
 
-#define MO_QUOTE LT(1, KC_QUOTE)
-#define MO_ESC  LT(1, KC_ESCAPE)
+#define MO_QUOTE MT(MOD_RSFT, KC_QUOTE)
+#define MO_ESC  LT(MOD_LSFT, KC_ESCAPE)
 
 #define MO_SPACE    LT(1, KC_SPACE)
 #define MO_ENTER    LT(1, KC_ENTER)
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
     TD(DANCE_0),    KC_1,           KC_2,           KC_3,           KC_4,           KC_5,                                           KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,
     KC_TAB,         KC_Q,           KC_W,           KC_E,           MO_R,           KC_T,                                           KC_Y,           MO_U,           KC_I,           KC_O,           KC_P,           KC_BSLASH,
-    MO_ESC,         MO_A,           MO_S,           MO_D,           MO_F,           MO_G,                                           MO_H,           MO_J,           MO_K,           MO_L,           MO_SCOLON,      MO_QUOTE,
+    MO_ESC,         MO_A,           MO_S,           MO_D,           MO_F,           MO_G,                                           MO_H,           MO_J,           MO_K,           MO_L,           MO_SCOLON,     MO_QUOTE,
     KC_LSFT,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RSFT,
                                                                                     KC_BSPACE,  KC_SPACE,               KC_ENTER,   KC_ESCAPE
   ),
