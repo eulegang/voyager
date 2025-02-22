@@ -25,12 +25,14 @@
 #define MO_D MT(MOD_LGUI, KC_D)
 #define MO_F MT(MOD_LCTL, KC_F)
 #define MO_A MT(MOD_LSFT, KC_A)
+#define MO_E MT(MOD_LSFT, KC_E)
 
 #define MO_H LT(LT_SYM, KC_H)
 #define MO_J MT(MOD_RCTL, KC_J)
 #define MO_K MT(MOD_RGUI, KC_K)
 #define MO_L MT(MOD_RALT, KC_L)
-#define MO_SCOLON MT(MOD_RSFT, KC_SCOLON)
+#define MO_SCLN MT(MOD_RSFT, KC_SCLN)
+#define MO_I MT(MOD_RSFT, KC_I)
 
 #define MO_R LT(LT_NAV, KC_R)
 #define MO_U LT(LT_NAV, KC_U)
@@ -56,8 +58,8 @@ enum TD_KEYS {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [LT_BASE] = LAYOUT_voyager(
     US_MOD,         KC_1,           KC_2,           KC_3,           KC_4,           KC_5,                                           KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,
-    KC_TAB,         KC_Q,           KC_W,           KC_E,           MO_R,           KC_T,                                           KC_Y,           MO_U,           KC_I,           KC_O,           KC_P,           KC_BSLS,
-    MO_ESC,         MO_A,           MO_S,           MO_D,           MO_F,           MO_G,                                           MO_H,           MO_J,           MO_K,           MO_L,           KC_SCLN,        MO_QUOTE,
+    KC_TAB,         KC_Q,           KC_W,           MO_E,           MO_R,           KC_T,                                           KC_Y,           MO_U,           MO_I,           KC_O,           KC_P,           KC_BSLS,
+    MO_ESC,         MO_A,           MO_S,           MO_D,           MO_F,           MO_G,                                           MO_H,           MO_J,           MO_K,           MO_L,           MO_SCLN,        MO_QUOTE,
     KC_LSFT,        KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       KC_RSFT,
                                                                                     KC_BSPC,  KC_SPACE,                 KC_ENTER,   KC_ESCAPE
   ),
